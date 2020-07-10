@@ -1,0 +1,261 @@
+/*这个文件放的是首页的样式*/
+.main{
+  width: 980px;
+  height: 455px;
+  margin-left: 219px;
+  margin-top: 10px;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?6zbylx');
+  src:  url('../fonts/icomoon.eot?6zbylx#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?6zbylx') format('truetype'),
+  url('../fonts/icomoon.woff?6zbylx') format('woff'),
+  url('../fonts/icomoon.svg?6zbylx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.focus{
+  position: relative;
+  float: left;
+  width: 720px;
+  height: 455px;
+}
+.arrow-l,
+.arrow-r{
+  /*浮动加了绝对定位的元素可以直接给大小,即有了块级框*/
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 24px;
+  height: 40px;
+  background:rgba(0,0,0,.3);
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-family: 'icomoon';
+  font-size: 18px;
+}
+.arrow-r{
+  right: 0;
+}
+.circle{
+  position: absolute;
+  bottom: 8px;
+  left: 50px;
+}
+.circle li{
+  float: left;
+  width: 8px;
+  height: 8px;
+  border:2px solid rgba(255,255,255,0.6);
+  margin: 0 3px;
+  border-radius: 50%;
+  /*鼠标经过会显示小手*/
+  cursor: pointer;
+}
+.current{
+  background-color: #fff;
+}
+.newflash{
+  float: right;
+  width: 250px;
+  height: 455px;
+}
+.news{
+  height: 163px;
+  border: 1px solid #ccc;
+}
+.lifeservice{
+  height: 208px;
+  border: 1px solid #ccc;
+  border-top: none;
+  overflow: hidden;
+}
+.bargin{
+  height: 75px;
+  margin-top: 5px;
+}
+.news-hd{
+  height: 32px;
+  /*dotted:点线 dashed:虚线*/
+  border-bottom: 1px dotted #ccc;
+  font-size: 14px;
+  line-height: 32px;
+  padding:0 15px;
+}
+.news-hd a{
+  float: right;
+  overflow: hidden;
+  font-family: 'icomoon';
+  font-size: 12px;
+}
+.news-bd{
+  padding: 10px 0 0 15px;
+}
+.news-bd li{
+  height: 23px;
+}
+.lifeservice li{
+  position: relative;
+  float: left;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice li a{
+  /*解决外边距引起的外边距塌陷合并的问题*/
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
+.service_ico{
+  display: block;
+  width: 24px;
+  height: 24px;
+  background:url("../imgss/icons.png") no-repeat -17px -16px;
+  margin: 10px auto;
+}
+.service_ico-feiji{
+  display: block;
+  width: 26px;
+  height: 24px;
+  background:url("../imgss/icons.png") no-repeat -78px -16px;
+  margin: 10px auto;
+}
+.lifeservice li  p{
+  text-align: center;
+}
+.hot{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 15px;
+  background: url("../imgss/jian.jpg") no-repeat;
+}
+
+/*推荐模块8/ */
+.recommend{
+  height: 163px;
+  margin-top: 10px;
+}
+.recommend-hd{
+  width: 200px;
+  height: 163px;
+  background-color: #5c5251;
+  text-align: center;
+}
+.recommend-bd{
+  width: 1000px;
+  height: 163px;
+  background-color: #fff;
+}
+.recommend-hd img{
+  margin: 30px 0 10px 0;
+}
+.recommend-hd h3{
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+}
+.recommend-bd li{
+  float: left;
+  width: 249px;
+  height: 145px;
+  border-right: 1px solid #ccc;
+  margin-top: 10px;
+}
+.recommend-bd  .last{
+  border-right: none;
+}
+
+/*floor 区域*/
+.box-hd{
+  height: 30px;
+  border-bottom: 2px solid #c81623;
+  margin-top: 25px;
+}
+.box-hd h3{
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+}
+.tab-list{
+  line-height: 30px;
+  float: right;
+}
+.tab-list li{
+  float: left;
+}
+.tab-list li a{
+  margin: 0 15px;
+}
+.box-bd {
+  height: 361px;
+}
+.tab-con li{
+  height: 361px;
+  float: left;
+}
+.w209{
+  width: 209px;
+  background-color: #f9f9f9;
+}
+.w329{
+  width: 329px;
+}
+.w219{
+  width: 219px;
+  border-right:1px solid #ccc;
+}
+.tab-con-item{
+  border-bottom: 1px solid #ccc;
+}
+.tab-con .tab-con-list li{
+  width: 86px;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 10px;
+  border-bottom: 1px solid #cccc;
+  text-align: center;
+}
+.tab-con-list{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+/*左侧电梯导航*/
+.fixedtool{
+  width: 66px;
+  position: fixed;
+  top:100px;
+  left: 50%;
+  margin-left: -676px;
+  background-color: white;
+}
+.fixedtool li{
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.fixedtool .current{
+  background-color: #c81623;
+  color: #fff;
+}
+.box-bd img{
+  transition: all 0.2s;
+}
+.box-bd img:hover{
+  margin-left: 8px;
+}
+.box-bd li{
+  overflow: hidden;
+}
